@@ -1,0 +1,16 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: simplenodeapp
+  namespace: default
+  annotations:
+    flux.weave.works/automated: "true"
+spec:
+  releaseName: simplenodeapp
+  chart:
+    git: git@github.com:JonRudy/SimpleNodeApp
+    path: charts/simple-node-app
+    ref: master
+  values:
+    image: artifactory.toolchain.lead.prod.liatr.io/docker-registry/flywheel/simplenodeapp:d3de625
+    replicaCount: 1
