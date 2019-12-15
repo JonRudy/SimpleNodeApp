@@ -16,5 +16,5 @@ spec:
   values:
     image:
       repository: artifactory.toolchain.lead.prod.liatr.io/docker-registry/flywheel/simplenodeapp
-      tag: '68eb887'
+      tag: '04ec332'
     replicaCount: 1
