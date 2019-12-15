@@ -4,6 +4,6 @@ build:
   tagPolicy:
     gitCommit: {}
   artifacts:
-  - image: gratibot
+  - image: simplenodeapp
     context: .
     
