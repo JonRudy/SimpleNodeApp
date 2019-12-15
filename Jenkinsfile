@@ -7,6 +7,7 @@ pipeline {
       }
       steps {
         container('skaffold') {
+          scmSkip(deleteBuild: true, skipPattern:'.*\\[ci skip\\].*')
           sh "skaffold build"
         }
       }
